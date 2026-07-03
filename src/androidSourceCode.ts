@@ -814,5 +814,83 @@ fun DashboardScreen(navController: NavController) {
         }
     }
 }`
+  },
+  {
+    category: 'Resources',
+    name: 'data_extraction_rules.xml',
+    path: 'app/src/main/res/xml/data_extraction_rules.xml',
+    code: `<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="."/>
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="."/>
+    </device-transfer>
+</data-extraction-rules>`
+  },
+  {
+    category: 'Resources',
+    name: 'backup_rules.xml',
+    path: 'app/src/main/res/xml/backup_rules.xml',
+    code: `<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="."/>
+    <include domain="database" path="."/>
+</full-backup-content>`
+  },
+  {
+    category: 'Resources',
+    name: 'themes.xml',
+    path: 'app/src/main/res/values/themes.xml',
+    code: `<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FUDMALectureReminder" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>`
+  },
+  {
+    category: 'Resources',
+    name: 'ic_launcher.xml',
+    path: 'app/src/main/res/mipmap/ic_launcher.xml',
+    code: `<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <rect
+        android:width="108"
+        android:height="108"
+        android:fillColor="#1E5631"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,24C37.4,24 24,37.4 24,54C24,70.6 37.4,84 54,84C70.6,84 84,70.6 84,54C84,37.4 70.6,24 54,24ZM54,78C40.8,78 30,67.2 30,54C30,40.8 40.8,30 54,30C67.2,30 78,40.8 78,54C78,67.2 67.2,78 54,78Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,36H56V54H68V58H52V36Z"/>
+</vector>`
+  },
+  {
+    category: 'Resources',
+    name: 'ic_launcher_round.xml',
+    path: 'app/src/main/res/mipmap/ic_launcher_round.xml',
+    code: `<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#1E5631"
+        android:pathData="M54,54m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,24C37.4,24 24,37.4 24,54C24,70.6 37.4,84 54,84C70.6,84 84,70.6 84,54C84,37.4 70.6,24 54,24ZM54,78C40.8,78 30,67.2 30,54C30,40.8 40.8,30 54,30C67.2,30 78,40.8 78,54C78,67.2 67.2,78 54,78Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,36H56V54H68V58H52V36Z"/>
+</vector>`
   }
 ];
