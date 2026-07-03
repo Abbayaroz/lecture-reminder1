@@ -23,6 +23,9 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
+      - name: Setup Gradle Wrapper
+        run: gradle wrapper
+
       - name: Grant Execute Permission to Gradlew
         run: chmod +x gradlew
         # Note: If your Android project is in a subdirectory (e.g. android-project), 
