@@ -1,0 +1,75 @@
+name: lecture_reminder
+description: A Flutter application for lecture reminders and timetable management.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP and networking
+  dio: ^5.3.1
+  
+  # State management
+  provider: ^6.0.0
+  
+  # Local storage
+  shared_preferences: ^2.2.0
+  
+  # Date and time handling
+  intl: ^0.18.0
+  
+  # JSON serialization
+  json_serializable: ^6.7.0
+  json_annotation: ^4.8.0
+  
+  # Networking and caching
+  http: ^1.1.0
+  
+  # Firebase (for push notifications)
+  firebase_core: ^2.24.0
+  firebase_messaging: ^14.6.0
+  
+  # QR code scanner
+  qr_code_scanner: ^1.0.1
+  
+  # Local notifications
+  flutter_local_notifications: ^16.3.0
+  
+  # Logging
+  logger: ^2.0.0
+  
+  # Device info
+  device_info_plus: ^9.1.0
+  
+  # Connectivity
+  connectivity_plus: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
