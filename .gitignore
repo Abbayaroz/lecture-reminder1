@@ -1,8 +1,40 @@
+# Laravel
+/vendor
+.env
+.env.local
+.env.*.local
+/bootstrap/cache/
+/storage/logs/
+/storage/app/
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Flutter
 build/
-dist/
-coverage/
+.dart_tool/
+.flutter-plugins
+.packages
+*.iml
+.gradle/
+local.properties
+android/local.properties
+ios/Pods/
+ios/.symlinks/
+.env.dart
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
-*.log
-.env*
-!.env.example
+
+# Database
+*.sqlite
+*.db
+
+# Environment
+.env
+.env.local
